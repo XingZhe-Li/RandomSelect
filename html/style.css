@@ -1,0 +1,72 @@
+body{
+    overflow: hidden;
+    background-image: linear-gradient(60deg,#505050,#202020);
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'majeure';
+    src: url('./majeure.ttf');
+}
+
+@font-face {
+    font-family: 'DYZ';
+    src: url('./DYZ.otf');
+}
+
+.SelectBtn{
+    font-family: 'majeure';
+    color:#FFF;
+    border: #FFF 1px solid;
+    border-radius: 8px;
+    padding:10px;
+    transition: all .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    gap:20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.SelectBtn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.SelectBtn img{
+    height:36px;
+}
+
+.SelectBox{
+    margin-top:80px;
+    position: absolute;
+    z-index: -10;
+    opacity: 0.2;
+    margin-bottom:30000px;
+}
+
+.namebox{
+    height:80px;
+    width:100%;
+    text-align: center;
+    font-family: 'DYZ';
+    color:#FFF;
+    font-size: 4rem;
+    top:0px;
+}
+
+.readline{
+    width: 90%;
+    position: fixed;
+    margin:5%;
+    background-color: #F00;
+    height:2px;
+    display: none;
+}
